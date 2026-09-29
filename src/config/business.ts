@@ -30,4 +30,14 @@ export const businessConfig = {
     facebook: "",
     youtube: "",
   },
+
+  businessHours: {
+    monday: "07:00–23:00",
+    tuesday: "07:00–23:00",
+    wednesday: "07:00–23:00",
+    thursday: "07:00–23:00",
+    friday: "07:00–23:00",
+    saturday: "07:00–23:00",
+    sunday: "07:00–23:00",
+  },
 } as const;

@@ -657,15 +657,75 @@ summary svg {
   background: #171717;
   color: #fff;
 }
-footer {
-  background: #0b0b0b;
+.footerContactBand {
+  padding: 42px 0;
+  background: #182421;
   color: #fff;
-  padding: 55px 0 20px;
+  border-top: 1px solid #35453f;
+}
+.footerContactLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 54px;
+}
+.footerContactHeading h2 {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+.footerContactHeading > p:last-child {
+  color: #c4ccc7;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0;
+}
+.footerContactDetails {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 24px;
+}
+.footerContactDetails > a,
+.footerContactDetails > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #ffffff24;
+  color: #fff;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.footerContactDetails svg {
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  color: var(--gold);
+}
+.footerContactDetails span {
+  display: grid;
+  gap: 4px;
+}
+.footerContactDetails small {
+  color: #aeb8b2;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.footerContactDetails a:hover {
+  color: var(--gold);
+}
+footer {
+  background: #000;
+  color: #fff;
+  padding: 0 0 20px;
 }
 .footerGrid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1.2fr;
+  grid-template-columns: 1.7fr 1fr 1.1fr;
   gap: 40px;
+  padding-top: 55px;
 }
 .footerGrid p {
   font-size: 12px;
@@ -773,7 +833,11 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .footerGrid {
-    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+  .footerContactLayout {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 @media (max-width: 560px) {
@@ -875,6 +939,12 @@ footer {
   .footerGrid {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+  .footerContactBand {
+    padding: 34px 0;
+  }
+  .footerContactDetails {
+    grid-template-columns: 1fr;
   }
   .footerBottom {
     display: block;

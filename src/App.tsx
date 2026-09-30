@@ -314,7 +314,12 @@ function Header() {
           onClick={() => setOpen(false)}
           aria-label="Jabalpur Car Rental Taxi Service"
         >
-          <img src="/images/branding/jabalpur-car-rental-taxi-logo.svg" alt="" width="2067" height="761" />
+          <img
+            src="/images/branding/jabalpur-car-rental-taxi-logo.svg"
+            alt=""
+            width="2067"
+            height="761"
+          />
         </Link>
         <nav className={open ? "open" : ""} aria-label="Main navigation">
           {links.map(([label, href]) => (
@@ -662,7 +667,10 @@ function Why() {
       "Local Jabalpur Service",
       "Local travel, sightseeing and route planning from Jabalpur.",
     ],
-    ["Direct Contact", "Discuss your trip details with us on WhatsApp or phone."],
+    [
+      "Direct Contact",
+      "Discuss your trip details with us on WhatsApp or phone.",
+    ],
     [
       "Multiple Vehicle Categories",
       "Seating categories for individuals, families and groups.",
@@ -1029,7 +1037,12 @@ function Footer() {
               to="/"
               aria-label="Jabalpur Car Rental Taxi Service"
             >
-              <img src="/images/branding/jabalpur-car-rental-taxi-logo.svg" alt="" width="2067" height="761" />
+              <img
+                src="/images/branding/jabalpur-car-rental-taxi-logo.svg"
+                alt=""
+                width="2067"
+                height="761"
+              />
             </Link>
             <p>
               Reliable local, sightseeing, airport, railway station and

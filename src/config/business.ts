@@ -32,12 +32,12 @@ export const businessConfig = {
   },
 
   businessHours: {
-    monday: "07:00–23:00",
-    tuesday: "07:00–23:00",
-    wednesday: "07:00–23:00",
-    thursday: "07:00–23:00",
-    friday: "07:00–23:00",
-    saturday: "07:00–23:00",
-    sunday: "07:00–23:00",
+    monday: "Open 24 hours",
+    tuesday: "Open 24 hours",
+    wednesday: "Open 24 hours",
+    thursday: "Open 24 hours",
+    friday: "Open 24 hours",
+    saturday: "Open 24 hours",
+    sunday: "Open 24 hours",
   },
 } as const;

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190" role="img" aria-labelledby="title desc">
+<title id="title">Jabalpur Car Rental Taxi Service</title>
+<desc id="desc">Premium black and gold logo with a white sedan and road inspired by Jabalpur travel.</desc>
+<defs>
+  <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#f5b400"/><stop offset="1" stop-color="#c98b00"/></linearGradient>
+  <linearGradient id="road" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#333"/></linearGradient>
+</defs>
+<rect width="720" height="190" rx="28" fill="#0b0b0b"/>
+<circle cx="92" cy="95" r="70" fill="#171717" stroke="url(#gold)" stroke-width="5"/>
+<path d="M38 126 Q92 88 146 126" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+<path d="M49 112 Q92 72 135 112" fill="none" stroke="#555" stroke-width="3" opacity=".8"/>
+<path d="M55 120 L129 120" stroke="#fff" stroke-width="2" stroke-dasharray="8 8" opacity=".8"/>
+<g transform="translate(43 67)">
+  <path d="M10 39 L20 22 Q24 16 32 15 L62 15 Q69 15 74 22 L84 39 Z" fill="#f7f7f7"/>
+  <path d="M27 18 L38 18 L44 30 L21 30 Z" fill="#222"/>
+  <path d="M47 18 L61 18 Q66 18 70 24 L74 30 L49 30 Z" fill="#222"/>
+  <rect x="6" y="34" width="84" height="10" rx="5" fill="#f7f7f7"/>
+  <circle cx="25" cy="45" r="9" fill="#111" stroke="#aaa" stroke-width="3"/>
+  <circle cx="70" cy="45" r="9" fill="#111" stroke="#aaa" stroke-width="3"/>
+  <path d="M11 35 H85" stroke="url(#gold)" stroke-width="3"/>
+</g>
+<text x="180" y="72" fill="#f5b400" font-family="Arial,Helvetica,sans-serif" font-size="37" font-weight="800" letter-spacing="4">JABALPUR</text>
+<text x="181" y="112" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" letter-spacing="2">CAR RENTAL TAXI SERVICE</text>
+<text x="183" y="143" fill="#aaa" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="600" letter-spacing="4">JABALPUR • MADHYA PRADESH</text>
+</svg>

@@ -5,11 +5,11 @@ Premium, mobile-first taxi website UI with reusable React components, Tailwind C
 ## Setup
 
 ```sh
-bun install
-bun run dev
+npm install
+npm run dev
 ```
 
-The development server starts at the port printed in the terminal. To create a production build, run `bun run build`. Run automated tests with `bun run test`.
+The development server starts at the port printed in the terminal. To create a production build, run `npm run build`. Run automated tests with `npm run test`.
 
 ## Stack and structure
 

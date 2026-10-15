@@ -4,14 +4,14 @@ export const businessConfig = {
   name: "Jabalpur Car Rental Taxi Service",
   shortName: "Jabalpur Car Rental",
   phone: "7047057575",
-  whatsapp: "7047057575",
+  whatsapp: "917047057575",
   email: "jcrtaxiservice@gmail.com",
-  website: "",
+  website: "https://jcrtaxiservice.netlify.app/",
   googleMapsUrl:
     "https://www.google.com/maps/place/Jabalpur+Car+Rental+Taxi+Service/@23.1617731,79.8632827,15z/data=!4m10!1m2!2m1!1sjabalpur+car+rental+taxi+service!3m6!1s0x3981adbe8b2ac917:0xa3964949d43a1433!8m2!3d23.1610995!4d79.8735983!15sCiBqYWJhbHB1ciBjYXIgcmVudGFsIHRheGkgc2VydmljZVoiIiBqYWJhbHB1ciBjYXIgcmVudGFsIHRheGkgc2VydmljZZIBDHRheGlfc2VydmljZeABAA!16s%2Fg%2F11vrdtggb_?entry=ttu&g_ep=EgoyMDI2MTAxMi4wIKXMDSoASAFQAw%3D%3D",
   city: "Jabalpur",
   state: "Madhya Pradesh",
-  postalCode: "",
+  postalCode: "482003",
   businessHours: {
     monday: "Open 24 hours",
     tuesday: "Open 24 hours",
@@ -22,14 +22,31 @@ export const businessConfig = {
     sunday: "Open 24 hours",
   },
   address: {
-    street: "",
+    street: "Shop No 02, In Front of Gurukul School, Dhanwantri Nagar",
     locality: "Jabalpur",
     state: "Madhya Pradesh",
-    postalCode: "",
+    postalCode: "482003",
   },
-  serviceAreas: ["Jabalpur", "Madhya Pradesh", "Nearby outstation destinations"],
+  serviceAreas: [
+    "Jabalpur",
+    "Katni",
+    "Mandla",
+    "Gotegaon",
+    "Bandhavgarh",
+    "Bargi",
+    "Damoh",
+    "Patan",
+    "Seoni",
+    "Kundam",
+    "Sihora",
+    "Dindori",
+    "Panagar",
+    "Shahpura",
+    "Bhedaghat",
+    "Lakhnadon",
+  ],
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Jabalpur%2C%20Madhya%20Pradesh%2C%20India",
+    "https://www.google.com/maps/place/Jabalpur+Car+Rental+Taxi+Service/@23.1617731,79.8632827,15z/data=!4m10!1m2!2m1!1sjabalpur+car+rental+taxi+service!3m6!1s0x3981adbe8b2ac917:0xa3964949d43a1433!8m2!3d23.1610995!4d79.8735983!15sCiBqYWJhbHB1ciBjYXIgcmVudGFsIHRheGkgc2VydmljZVoiIiBqYWJhbHB1ciBjYXIgcmVudGFsIHRheGkgc2VydmljZZIBDHRheGlfc2VydmljZeABAA!16s%2Fg%2F11vrdtggb_?entry=ttu",
 };
 
 export const business = {

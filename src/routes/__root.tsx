@@ -14,6 +14,30 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { businessConfig } from "@/config/business";
+
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": `${businessConfig.website}#localbusiness`,
+  name: businessConfig.name,
+  url: businessConfig.website,
+  telephone: `+91${businessConfig.phone}`,
+  email: businessConfig.email,
+  hasMap: businessConfig.googleMapsUrl,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: businessConfig.address.street,
+    addressLocality: businessConfig.city,
+    addressRegion: businessConfig.state,
+    postalCode: businessConfig.address.postalCode,
+    addressCountry: "IN",
+  },
+  areaServed: businessConfig.serviceAreas.map((name) => ({
+    "@type": "Place",
+    name,
+  })),
+};
 
 function NotFoundComponent() {
   return (
@@ -93,9 +117,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;650;700;800&display=swap" },
     ],
   }),
   shellComponent: RootShell,
@@ -109,6 +130,10 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
       </head>
       <body>
         {children}

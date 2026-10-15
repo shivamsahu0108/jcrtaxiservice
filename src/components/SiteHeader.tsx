@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { businessConfig as business } from "../config/business";
 import { whatsappUrl } from "../utils/whatsapp";
 
-const links = [
+const links: [string, string][] = [
   ["Home", "/"],
   ["Taxi Services", "/taxi-service-jabalpur"],
   ["Car Rental", "/car-rental-jabalpur"],
@@ -43,18 +43,10 @@ export default function SiteHeader() {
           ))}
         </nav>
         <div className="navActions">
-          <a
-            href={`tel:${business.phone}`}
-            aria-label="Call Jabalpur Car Rental Taxi Service"
-          >
+          <a href={`tel:${business.phone}`} aria-label="Call Jabalpur Car Rental Taxi Service">
             <Phone />
           </a>
-          <a
-            href={whatsappUrl()}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Chat on WhatsApp"
-          >
+          <a href={whatsappUrl()} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
             <MessageCircle />
           </a>
         </div>

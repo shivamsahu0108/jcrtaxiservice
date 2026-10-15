@@ -1,8 +1,6 @@
-import { MapPin, Phone, Mail, MapPinned, ArrowUpRight } from "lucide-react";
+import { MapPin, Phone, Mail, MapPinned } from "lucide-react";
 import { business } from "@/config/business";
 import { SectionHeading } from "@/components/SectionHeading";
-import { Button } from "@/components/Button";
-import { BookingDialog } from "@/components/BookingDialog";
 import { ContactAction } from "@/components/ContactAction";
 export function Contact() {
   return (
@@ -15,12 +13,6 @@ export function Contact() {
             description="Share your plans. We’ll help you explore the right ride for your journey."
           />
           <div className="contact-buttons">
-            <BookingDialog>
-              <Button variant="gold" size="lg">
-                Plan Your Ride
-                <ArrowUpRight />
-              </Button>
-            </BookingDialog>
             <ContactAction />
             <ContactAction kind="whatsapp" />
           </div>

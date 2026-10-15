@@ -1,10 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight } from "lucide-react";
 import { Brand } from "./Header";
 import { business, navItems } from "@/config/business";
 import { ContactAction } from "./ContactAction";
-import { BookingDialog } from "./BookingDialog";
-import { Button } from "./Button";
 export function Footer() {
   return (
     <>
@@ -59,12 +56,7 @@ export function Footer() {
       </footer>
       <div className="mobile-booking-actions">
         <ContactAction />
-        <BookingDialog>
-          <Button variant="gold">
-            Book Your Ride
-            <ArrowUpRight />
-          </Button>
-        </BookingDialog>
+        <ContactAction kind="whatsapp" />
       </div>
     </>
   );

@@ -1,4 +1,5 @@
-import { ArrowRight, MapPin, Star } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
+import GoogleReviews from "../components/GoogleReviews";
 import { jabalpurDestinations, mpDestinations } from "../data/destinations";
 import { popularRoutes } from "../data/routes";
 import ContactActions from "../components/ContactActions";
@@ -113,28 +114,11 @@ export default function HomePage() {
           eyebrow="CUSTOMER REVIEWS"
           title={
             <>
-              Read our reviews <em>on Google.</em>
+              What our customers <em>say about us.</em>
             </>
           }
         >
-          <div className="googleReviewsPanel">
-            <Star aria-hidden="true" />
-            <div>
-              <h3>Genuine customer feedback</h3>
-              <p>
-                Read customer reviews directly on our Google Business Profile.
-                We do not publish invented testimonials or ratings here.
-              </p>
-              <a
-                className="btn gold"
-                href={business.googleMapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read Google Reviews <ArrowRight />
-              </a>
-            </div>
-          </div>
+          <GoogleReviews />
         </Section>
         <Section
           eyebrow="FIND OUR BUSINESS"

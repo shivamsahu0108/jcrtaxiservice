@@ -1,5 +1,4 @@
 import { ArrowRight, MapPin } from "lucide-react";
-import GoogleReviews from "../components/GoogleReviews";
 import { jabalpurDestinations, mpDestinations } from "../data/destinations";
 import { popularRoutes } from "../data/routes";
 import ContactActions from "../components/ContactActions";
@@ -110,16 +109,6 @@ export default function HomePage() {
         <CitiesPreview />
         <Packages />
         <Why />
-        <Section
-          eyebrow="CUSTOMER REVIEWS"
-          title={
-            <>
-              What our customers <em>say about us.</em>
-            </>
-          }
-        >
-          <GoogleReviews />
-        </Section>
         <Section
           eyebrow="FIND OUR BUSINESS"
           title={

@@ -46,13 +46,13 @@ export function Header() {
             ))}
           </nav>
           <div className="header-actions">
-            <ContactAction />
-            <BookingDialog>
-              <Button variant="gold">
-                Book a Taxi
-                <ArrowUpRight />
-              </Button>
-            </BookingDialog>
+      
+            <Button variant="darkOutline" >
+              <ContactAction none  />
+            </Button>
+            <Button variant="gold" >
+              <ContactAction kind="whatsapp" none  />
+            </Button>
           </div>
           <Button
             variant="darkOutline"

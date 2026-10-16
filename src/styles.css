@@ -906,6 +906,10 @@
   position: relative;
   display: inline-flex;
 }
+.contact-action-button{
+  border: none;
+  background: none;
+}
 .contact-notice {
   position: absolute;
   right: 0;

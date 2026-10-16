@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router';
-import { ArrowUpRight, ShieldCheck, MapPin, MessageCircle } from 'lucide-react';
+import { ArrowUpRight, ShieldCheck, MapPin } from 'lucide-react';
 import hero from '@/assets/chauffeur-hero.jpg';
 import { Button } from '@/components/Button';
 import { ContactAction } from '@/components/ContactAction';

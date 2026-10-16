@@ -138,6 +138,10 @@ function RootShell({ children }: { children: ReactNode }) {
       <body>
         {children}
         <Scripts />
+        <script
+          async
+          src="https://widget.trustmary.com/6mgWc3B2e"
+        />
       </body>
     </html>
   );

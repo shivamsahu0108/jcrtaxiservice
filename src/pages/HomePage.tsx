@@ -1,5 +1,6 @@
 import { ArrowRight, MapPin } from "lucide-react";
 import GoogleReviews from "../components/GoogleReviews";
+import TrustmaryWidget from "../components/TrustmaryWidget";
 import { jabalpurDestinations, mpDestinations } from "../data/destinations";
 import { popularRoutes } from "../data/routes";
 import ContactActions from "../components/ContactActions";
@@ -23,6 +24,7 @@ import { SEO } from "../components/SEO";
 export default function HomePage() {
   return (
     <>
+      <TrustmaryWidget />
       <SEO
         title="Jabalpur Car Rental & Taxi Service | Local & Outstation Taxi"
         description="Jabalpur Car Rental Taxi Service offers local taxi bookings, car rental with driver, outstation and round-trip cabs, railway station transfers, sightseeing around Bhedaghat, and travel from Jabalpur, Madhya Pradesh. Call 7047057575 to enquire."
